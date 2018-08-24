@@ -13,20 +13,26 @@ namespace Ejercicio_03
       Console.Title = "Ejercicio Nro 03";
 
       int numero;
+      int contador = 0;
 
       Console.Write("Ingrese un numero: ");
 
       numero = int.Parse(Console.ReadLine());
 
-      for(int i = 1; i < numero; i++)
+      for(int i = 2; i <= numero; i++)
       {
-        for(int j = 0; i< numero-1; i++)
+        for(int j = 1; j < numero; j++)
         {
-          if (j % )
+          if(i % j == 0)
           {
-            Console.WriteLine("Numeros primos: {0}", i);
+            contador++;
           }
         }
+        if (contador <= 2)
+        {
+          Console.WriteLine("Numeros primos: {0}", i);
+        }
+        contador = 0;
       }
 
       Console.ReadKey();
