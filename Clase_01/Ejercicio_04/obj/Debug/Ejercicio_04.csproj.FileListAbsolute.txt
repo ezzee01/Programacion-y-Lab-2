@@ -5,3 +5,10 @@ C:\Users\alumno\Desktop\Programacion-y-Lab-2\Clase_01\Ejercicio_04\obj\Debug\Eje
 C:\Users\alumno\Desktop\Programacion-y-Lab-2\Clase_01\Ejercicio_04\obj\Debug\Ejercicio_04.csproj.CoreCompileInputs.cache
 C:\Users\alumno\Desktop\Programacion-y-Lab-2\Clase_01\Ejercicio_04\obj\Debug\Ejercicio_04.exe
 C:\Users\alumno\Desktop\Programacion-y-Lab-2\Clase_01\Ejercicio_04\obj\Debug\Ejercicio_04.pdb
+C:\Users\Eze\Desktop\Programacion-y-Lab-2\Clase_01\Ejercicio_04\bin\Debug\Ejercicio_04.exe.config
+C:\Users\Eze\Desktop\Programacion-y-Lab-2\Clase_01\Ejercicio_04\bin\Debug\Ejercicio_04.exe
+C:\Users\Eze\Desktop\Programacion-y-Lab-2\Clase_01\Ejercicio_04\bin\Debug\Ejercicio_04.pdb
+C:\Users\Eze\Desktop\Programacion-y-Lab-2\Clase_01\Ejercicio_04\obj\Debug\Ejercicio_04.csprojAssemblyReference.cache
+C:\Users\Eze\Desktop\Programacion-y-Lab-2\Clase_01\Ejercicio_04\obj\Debug\Ejercicio_04.csproj.CoreCompileInputs.cache
+C:\Users\Eze\Desktop\Programacion-y-Lab-2\Clase_01\Ejercicio_04\obj\Debug\Ejercicio_04.exe
+C:\Users\Eze\Desktop\Programacion-y-Lab-2\Clase_01\Ejercicio_04\obj\Debug\Ejercicio_04.pdb

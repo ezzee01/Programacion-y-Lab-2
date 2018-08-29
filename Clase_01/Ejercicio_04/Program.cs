@@ -12,32 +12,28 @@ namespace Ejercicio_04
     {
       Console.Title = "Ejercicio Nro 04";
 
-      int contador = 0;
-      int contador2 = 0;
-      int acumulador = 0;
+            int suma=0;
+            int contador = 1;
+            
+            for(; ; )
+            {
+                contador++;
 
-      for(; ; )
-      {
-        contador++;
+                for(int i=1; i<contador; i++)
+                {
+                    if(contador%i == 0)
+                    {
+                        suma += i;
+                    }                    
+                }
+                if (suma == contador)
+                {
+                    Console.WriteLine("{0} es numero perfecto", contador);                    
+                }
+                suma = 0;
+            }
 
-        for(int i=1; i < contador; i++)
-        {
-          if(contador % i == 0)
-          {
-            acumulador += i;
-          }
-        }
-        if(acumulador == contador)
-        {
-          contador2++;
-          Console.WriteLine("Numeros perfectos: {0}", contador);
-        }
-        if(contador2 == 4)
-        {
-          break;
-        }
-      }
-      Console.ReadKey();
+      //Console.ReadKey();
     }
   }
 }
