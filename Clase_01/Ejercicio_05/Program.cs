@@ -13,23 +13,36 @@ namespace Ejercicio_05
             Console.Title = "Ejercicio Nro 05";
 
             int numero;
-            int sumaUno=0;
-            int sumaDos = 0;
+            int sumaUno;
+            int sumaDos;
+            int contador = 0;
 
-            Console.WriteLine("Ingrese un numero");
+            Console.WriteLine("Ingrese un numero: ");
             numero = int.Parse(Console.ReadLine());
 
-            for(int i=1;i<numero;i++)
+            while (contador < numero)
             {
-                for(int j = i; i<=i; j++)
-                {
-                    sumaUno += j;
 
-                    for(int z = i+1; z<numero;z++)
-                    {
-                        sumaDos += z;
-                    }
+                contador++;
+                sumaUno = 0;
+                sumaDos = 0;
+
+                // Calculo para atras
+                for (int i = 1; i < contador; i++)
+                {
+                    sumaUno += i;
                 }
+                //calculo para adelante
+                for (int j = contador + 1; j <= sumaUno; j++)
+                {
+                    if ((sumaDos == sumaUno) || (sumaDos > sumaUno))
+                        break;
+                    sumaDos += j;
+                }
+
+                // Mostrando en pantalla
+                if (sumaUno == sumaDos)
+                    Console.WriteLine("Es centro numerico: {0}", contador);
             }
 
             Console.ReadKey();
