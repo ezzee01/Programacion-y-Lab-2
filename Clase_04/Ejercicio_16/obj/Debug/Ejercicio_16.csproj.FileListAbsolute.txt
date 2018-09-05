@@ -5,3 +5,10 @@ D:\VisualStudio\Clase_04\Ejercicio_16\bin\Debug\Ejercicio_16.exe
 D:\VisualStudio\Clase_04\Ejercicio_16\bin\Debug\Ejercicio_16.pdb
 D:\VisualStudio\Clase_04\Ejercicio_16\obj\Debug\Ejercicio_16.exe
 D:\VisualStudio\Clase_04\Ejercicio_16\obj\Debug\Ejercicio_16.pdb
+C:\Users\Eze\Desktop\Programacion-y-Lab-2\Clase_04\Ejercicio_16\bin\Debug\Ejercicio_16.exe.config
+C:\Users\Eze\Desktop\Programacion-y-Lab-2\Clase_04\Ejercicio_16\bin\Debug\Ejercicio_16.exe
+C:\Users\Eze\Desktop\Programacion-y-Lab-2\Clase_04\Ejercicio_16\bin\Debug\Ejercicio_16.pdb
+C:\Users\Eze\Desktop\Programacion-y-Lab-2\Clase_04\Ejercicio_16\obj\Debug\Ejercicio_16.csprojAssemblyReference.cache
+C:\Users\Eze\Desktop\Programacion-y-Lab-2\Clase_04\Ejercicio_16\obj\Debug\Ejercicio_16.csproj.CoreCompileInputs.cache
+C:\Users\Eze\Desktop\Programacion-y-Lab-2\Clase_04\Ejercicio_16\obj\Debug\Ejercicio_16.exe
+C:\Users\Eze\Desktop\Programacion-y-Lab-2\Clase_04\Ejercicio_16\obj\Debug\Ejercicio_16.pdb

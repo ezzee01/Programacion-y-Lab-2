@@ -1,2 +1,1 @@
-C:\Users\Eze\Desktop\Programacion-y-Lab-2\Clase_03\Ejercicio_15\obj\Debug\Ejercicio_15.csprojAssemblyReference.cache
 C:\Users\Eze\Desktop\Programacion-y-Lab-2\Clase_03\Ejercicio_15\obj\Debug\Ejercicio_15.csproj.CoreCompileInputs.cache

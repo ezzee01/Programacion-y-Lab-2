@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,25 +6,25 @@ using System.Threading.Tasks;
 
 namespace Ejercicio_15
 {
-  class Program
-  {
-    static void Main(string[] args)
+    class Program
     {
-      Console.Title = "Ejercicio Nro 15";
+        static void Main(string[] args)
+        {
+            Console.Title = "Ejercicio Nro 15";
 
-      char Operacion;
-      double NumeroUno;
-      double NumeroDos;
+            char Operacion;
+            double NumeroUno;
+            double NumeroDos;
 
-      Console.WriteLine("Calculadora.");
-      Console.WriteLine("Ingrese calculo a realizar: ");
+            Console.WriteLine("Calculadora.");
+            Console.WriteLine("Ingrese calculo a realizar: ");
 
-      NumeroUno = double.Parse(Console.ReadLine());
-      Operacion = char.Parse(Console.ReadLine());
-      NumeroDos = double.Parse(Console.ReadLine());
+            NumeroUno = double.Parse(Console.ReadLine());
+            Operacion = char.Parse(Console.ReadLine());
+            NumeroDos = double.Parse(Console.ReadLine());
 
 
-      Console.ReadKey();
+            Console.ReadKey();
+        }
     }
-  }
 }

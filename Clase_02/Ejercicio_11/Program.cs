@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Clase_02
+namespace Ejercicio_11
 {
     class Program
     {
@@ -15,10 +15,10 @@ namespace Clase_02
             int Numero;
             int minimo = int.MaxValue;
             int maximo = int.MinValue;
-            int suma =0;
+            int suma = 0;
             float promedio;
 
-            for(int i = 0; i<10;i++)
+            for (int i = 0; i < 10; i++)
             {
                 Console.WriteLine("Ingrese un numero entre -100 y 100: ");
 
@@ -28,13 +28,13 @@ namespace Clase_02
                 {
                     Console.WriteLine("Error, reingrese: ");
                     Numero = int.Parse(Console.ReadLine());
-                } 
+                }
 
-                if(Numero < minimo)
+                if (Numero < minimo)
                 {
                     minimo = Numero;
                 }
-                else if(Numero > maximo)
+                else if (Numero > maximo)
                 {
                     maximo = Numero;
                 }
