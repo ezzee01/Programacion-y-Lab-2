@@ -29,6 +29,11 @@ namespace ConsoleApp1
       return this.precio;
     }
 
+    public string GetCodigo()
+    {
+      return this.codigoDeBarra;
+    }
+
     public static string MostrarProducto(Producto p)
     {
       return "Marca: " + p.marca + "Precio: " + p.precio + "Codigo de barras: " + p.codigoDeBarra;
@@ -36,7 +41,9 @@ namespace ConsoleApp1
 
     public static explicit operator string (Producto p)
     {
-      return p.codigoDeBarra;
+      Producto p1 = new Producto(p.marca,p.codigoDeBarra, p.precio);
+      string cod = p1.codigoDeBarra;
+      return cod;
     }
 
     public static bool operator != (Producto p, string marca)
@@ -60,7 +67,7 @@ namespace ConsoleApp1
 
     public static bool operator ==(Producto p1, Producto p2)
     {
-      if (p1.marca == p2.marca && p1.codigoDeBarra == p2.codigoDeBarra)
+      if ((string)p1 == (string)p2 && p1.marca == p2.marca)
       {
         return true;
       }

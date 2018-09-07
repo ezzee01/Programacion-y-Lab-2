@@ -33,15 +33,37 @@ namespace ConsoleApp1
     }
 
     public static bool operator !=(Estante e, Producto p)
-    { }
+    {
+      return !(e.productos[e.ubicacionEstante] == p);
+    }
 
     public static bool operator == (Estante e,Producto p)
-    { }
+    {
+      if (e.productos[e.ubicacionEstante] == p)
+      {
+        return true;
+      }
+      else return false;
+    }
 
     public static Estante operator -(Estante e, Producto p)
-    { }
+    {
+      if (e == p)
+      {
+        e.productos[e.ubicacionEstante] = null;
+        return e;
+      }
+      else return e;
+    }
 
     public static bool operator +(Estante e,Producto p)
-    { }
+    {
+      if (e != p)
+      {
+        e.productos[e.ubicacionEstante] = p;
+        return true;
+      }
+      else return false;
+    }
   }
 }
