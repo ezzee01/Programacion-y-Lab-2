@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,20 +19,24 @@ namespace Entidades
 
         public double Operar(Numero num1, Numero num2, string operador)
         {
-            //double resultado;
+      double resultado;
 
-            //switch(Calculadora.ValidarOperador(operador))
-            //{
-            //    case "+": resultado = num1 + num2;
-            //        break;
-            //    case "-": resultado = num1 - num2;
-            //        break;
-            //    case "*": resultado = num1 * num2;
-            //        break;
-            //    case "/": resultado = num1 / num2;                    
-            //        break;
-            //}
-            //return resultado;
-        }
+      switch (Calculadora.ValidarOperador(operador))
+      {
+        case "+":
+          resultado = num1 + num2;
+          break;
+        case "-":
+          resultado = num1 - num2;
+          break;
+        case "*":
+          resultado = num1 * num2;
+          break;
+        case "/":
+          resultado = num1 / num2;
+          break;
+      }
+      return resultado;
+    }
     }
 }
