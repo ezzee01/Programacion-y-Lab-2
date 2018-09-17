@@ -20,7 +20,7 @@ namespace Ejercicio_13
 
             Console.WriteLine("Ingrese numero decimal: ");
 
-            NumeroDecimal = double.Parse(Console.ReadLine());
+            NumeroDecimal = Convert.ToDouble(Console.ReadLine());
 
             NumeroEnBinario = Conversor.DecimalBinario(NumeroDecimal);
 
