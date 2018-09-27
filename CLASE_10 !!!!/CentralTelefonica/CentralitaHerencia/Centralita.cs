@@ -15,7 +15,7 @@ namespace CentralitaHerencia
     {
       get
       {
-        return CalcularGanancia(TipoLlamada.Local);
+        return CalcularGanancia(Llamada.TipoLlamada.Local);
       }
     }
 
@@ -23,7 +23,7 @@ namespace CentralitaHerencia
     {
       get
       {
-        return CalcularGanancia(TipoLlamada.Provincial);
+        return CalcularGanancia(Llamada.TipoLlamada.Provincial);
       }
     }
 
@@ -31,7 +31,7 @@ namespace CentralitaHerencia
     {
       get
       {
-        return CalcularGanancia(TipoLlamada.Todas);
+        return CalcularGanancia(Llamada.TipoLlamada.Todas);
       }
     }
 
@@ -55,16 +55,45 @@ namespace CentralitaHerencia
 
     private float CalcularGanancia(Llamada.TipoLlamada tipo)
     {
-      float valor;
+      float ganancia = 0;
 
       foreach(Llamada llamada in this.listaDeLLamadas)
       {
-
+        switch(tipo)
+        {
+          case Llamada.TipoLlamada.Local:
+            if (llamada is Local)
+            {
+              ganancia = ganancia + ((Local)llamada).CostoLlamada;
+            }
+            break;
+          case Llamada.TipoLlamada.Provincial:
+            if (llamada is Provincial)
+            {
+              ganancia = ganancia + ((Provincial)llamada).CostoLlamada;
+            }
+            break;
+          case Llamada.TipoLlamada.Todas:
+            if (llamada is Local)
+            {
+              ganancia = ganancia + ((Local)llamada).CostoLlamada;
+            }
+            else if(llamada is Provincial)
+            {
+              ganancia = ganancia + ((Provincial)llamada).CostoLlamada;
+            }
+            break;
+        }
       }
+      return ganancia;
     }
 
     public string Mostrar()
-    { }
+    {
+      StringBuilder sb = new StringBuilder();
+      sb.AppendFormat("\nRazon social: ", this.razonSocial);
+      sb.AppendFormat("\n")
+    }
 
     public void OrdenarLlamadas()
     { }

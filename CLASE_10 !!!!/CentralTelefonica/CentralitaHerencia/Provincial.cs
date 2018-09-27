@@ -35,21 +35,32 @@ namespace CentralitaHerencia
 
     private float CalcularCosto()
     {
-      float valor = 0;
+      float costo = 0;
+      float retorno;
+
       switch(this.franjaHoraria)
       {
-        case Franja.Franja_1: valor = this.Duracion * this.CostoLlamada * (float)0.99;
+        case Franja.Franja_1: costo = (float)0.99;
           break;
-        case Franja.Franja_2: valor = this.Duracion * this.CostoLlamada * (float)1.25;
+        case Franja.Franja_2: costo = (float)1.25;
           break;
-        case Franja.Franja_3: valor = this.Duracion * this.CostoLlamada * (float)0.66;
+        case Franja.Franja_3: costo = (float)0.66;
           break;
       }
-      return valor;
+      retorno = costo * this.Duracion;
+      return retorno;
     }
 
     public string Mostrar()
-    { }
+    {
+      StringBuilder sb = new StringBuilder();
+      sb.AppendFormat("\nDuracion: {0}", this.duracion);
+      sb.AppendFormat("\nNro Destino: {0}", this.nroDestino);
+      sb.AppendFormat("\nNro Origen: {0}", this.nroOrigen);
+      sb.AppendFormat("\nFranja Horaria: {0}", this.franjaHoraria);
+      sb.AppendFormat("\Costo: {0}", this.CalcularCosto);
+      return sb.ToString();
+    }
 
 
   }

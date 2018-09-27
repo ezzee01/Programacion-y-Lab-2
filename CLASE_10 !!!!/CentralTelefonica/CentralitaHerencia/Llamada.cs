@@ -53,12 +53,26 @@ namespace CentralitaHerencia
     public string Mostrar()
     {
       StringBuilder sb = new StringBuilder();
-      sb.AppendLine("");
+      sb.AppendFormat("\nDuracion: {0}", this.duracion);
+      sb.AppendFormat("\nNro Destino: {0}", this.nroDestino);
+      sb.AppendFormat("\nNro Origen: {0}", this.nroOrigen);
+
+      return sb.ToString();
     }
 
     public static int OrdenarPorDuracion(Llamada llamada1, Llamada llamada2)
     {
-      
+      int retorno = 0;
+
+      if(llamada1.duracion > llamada2.duracion)
+      {
+        retorno = 1;
+      }
+      else if(llamada1.duracion < llamada2.duracion)
+      {
+        retorno = -1;
+      }
+      return retorno;
     }
   }
 }
