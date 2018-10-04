@@ -73,11 +73,11 @@ namespace Primer_parcial
             StringBuilder sb = new StringBuilder();
             if(this.esAlfa == true)
             {
-                sb.AppendFormat(base.DatosCompletos() + ", es alfa de la manada, edad " + this.edad.ToString());
+                sb.AppendFormat(base.DatosCompletos() + ", es alfa de la manada, edad " + this.edad.ToString() + "\n");
             }
             else
             {
-                sb.AppendFormat(base.DatosCompletos() + " edad " + this.edad.ToString());
+                sb.AppendFormat(base.DatosCompletos() + " edad " + this.edad.ToString() +"\n");
             }
             return sb.ToString();
         }

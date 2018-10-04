@@ -42,7 +42,7 @@ namespace Primer_parcial
         #region Metodos
         protected virtual string DatosCompletos()
         {
-            return string.Format(this.nombre + this.raza);
+            return string.Format(this.nombre + " " + this.raza +"\n");
         }
 
         protected abstract string Ficha();
