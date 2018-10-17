@@ -8,6 +8,7 @@ namespace CentralitaHerencia
 {
   class Provincial : Llamada
   {
+    #region Atributos
     public enum Franja
     {
       Franja_1,
@@ -16,7 +17,9 @@ namespace CentralitaHerencia
     }
 
     protected Franja franjaHoraria;
+    #endregion
 
+    #region Propiedades
     public float CostoLlamada
     {
       get
@@ -24,7 +27,9 @@ namespace CentralitaHerencia
         return CalcularCosto();
       }
     }
+    #endregion
 
+    #region Constructores
     public Provincial(Franja miFranja, Llamada llamada) : this(llamada.NroOrigen, miFranja, llamada.Duracion, llamada.NroDestino)
     { }
 
@@ -32,7 +37,9 @@ namespace CentralitaHerencia
     {
       this.franjaHoraria = miFranja;
     }
+    #endregion
 
+    #region Metodos
     private float CalcularCosto()
     {
       float costo = 0;
@@ -51,17 +58,15 @@ namespace CentralitaHerencia
       return retorno;
     }
 
-    public string Mostrar()
+    public override string Mostrar()
     {
       StringBuilder sb = new StringBuilder();
-      sb.AppendFormat("\nDuracion: {0}", this.duracion);
-      sb.AppendFormat("\nNro Destino: {0}", this.nroDestino);
-      sb.AppendFormat("\nNro Origen: {0}", this.nroOrigen);
+      sb.AppendLine(base.Mostrar());
       sb.AppendFormat("\nFranja Horaria: {0}", this.franjaHoraria);
-      sb.AppendFormat("\Costo: {0}", this.CalcularCosto);
+      sb.AppendFormat("\nCosto: {0}", this.CostoLlamada);
+
       return sb.ToString();
     }
-
-
+    #endregion
   }
 }

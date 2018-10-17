@@ -8,6 +8,7 @@ namespace CentralitaHerencia
 {
   class Llamada
   {
+    #region Atributos
     protected float duracion;
     protected string nroDestino;
     protected string nroOrigen;
@@ -18,7 +19,9 @@ namespace CentralitaHerencia
       Provincial,
       Todas
     }
+    #endregion
 
+    #region Propiedades
     public float Duracion
     {
       get
@@ -42,17 +45,26 @@ namespace CentralitaHerencia
         return this.nroOrigen;
       }
     }
+    #endregion
 
+    #region Constructores
     public Llamada(float duracion, string nroDestino, string nroOrigen)
     {
       this.duracion = duracion;
       this.nroDestino = nroDestino;
       this.nroOrigen = nroOrigen;
     }
+    #endregion
 
-    public string Mostrar()
+    #region Metodos
+    /// <summary>
+    /// Muestra toda informacion de la llamada
+    /// </summary>
+    /// <returns></returns>
+    public virtual string Mostrar()
     {
       StringBuilder sb = new StringBuilder();
+      sb.AppendLine("****LLAMADA****");
       sb.AppendFormat("\nDuracion: {0}", this.duracion);
       sb.AppendFormat("\nNro Destino: {0}", this.nroDestino);
       sb.AppendFormat("\nNro Origen: {0}", this.nroOrigen);
@@ -60,6 +72,12 @@ namespace CentralitaHerencia
       return sb.ToString();
     }
 
+    /// <summary>
+    /// Orddena llamadas por duracion
+    /// </summary>
+    /// <param name="llamada1"></param>
+    /// <param name="llamada2"></param>
+    /// <returns>Retorna 1 si llamada1 es mayor a llamada2, -1 si llamada1 es menor a llamada2, 0 si son iguales</returns>
     public static int OrdenarPorDuracion(Llamada llamada1, Llamada llamada2)
     {
       int retorno = 0;
@@ -74,5 +92,6 @@ namespace CentralitaHerencia
       }
       return retorno;
     }
+    #endregion
   }
 }

@@ -8,9 +8,12 @@ namespace CentralitaHerencia
 {
   class Centralita
   {
+    #region Atributos
     private List<Llamada> listaDeLLamadas;
     protected string razonSocial;
+    #endregion
 
+    #region Propiedades
     public float GananciasPorLocal
     {
       get
@@ -42,7 +45,9 @@ namespace CentralitaHerencia
         return listaDeLLamadas;
       }
     }
+    #endregion
 
+    #region Constructores
     public Centralita()
     {
       this.listaDeLLamadas = new List<Llamada>();
@@ -52,7 +57,9 @@ namespace CentralitaHerencia
     {
       this.razonSocial = nombreEmpresa;
     }
+    #endregion
 
+    #region Metodos
     private float CalcularGanancia(Llamada.TipoLlamada tipo)
     {
       float ganancia = 0;
@@ -91,11 +98,24 @@ namespace CentralitaHerencia
     public string Mostrar()
     {
       StringBuilder sb = new StringBuilder();
-      sb.AppendFormat("\nRazon social: ", this.razonSocial);
-      sb.AppendFormat("\n")
+      sb.AppendFormat("\nRazon social: {0}", this.razonSocial);
+      sb.AppendFormat("\nGanancia total: {0}", this.GananciasPorTotal);
+      sb.AppendFormat("\nGanancia por provincial: {0}", this.GananciasPorProvincial);
+      sb.AppendFormat("\nGanancia por local: {0}", this.GananciasPorLocal);
+      sb.AppendLine("LLAMADAS");
+      foreach(Llamada llamada in Llamadas)
+      {
+        sb.AppendLine(llamada.Mostrar());
+      }
+
+      return sb.ToString();
     }
 
     public void OrdenarLlamadas()
-    { }
+    {
+      this.listaDeLLamadas.Sort(Llamada.OrdenarPorDuracion);
+    }
+
+    #endregion
   }
 }
