@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Ejercicio_48
 {
-    public class Contabilidad<T,U> where U : new()
+    public class Contabilidad<T,U> where U : Documento, new()  where T: Documento
     {
         private List<T> egresos;
         private List<U> ingresos;
@@ -28,5 +28,21 @@ namespace Ejercicio_48
             c.ingresos.Add(ingreso);
             return c;
         }
+
+    public string Mostrar()
+    {
+      StringBuilder sb = new StringBuilder();
+      sb.AppendLine("****Lista de egresos****");
+      foreach(Documento d in this.egresos)
+      {
+        sb.AppendFormat(d.Mostrar());
+      }
+      sb.AppendLine("\n****Lista de ingresos****");
+      foreach(Documento d in this.ingresos)
+      {
+        sb.AppendFormat(d.Mostrar());
+      }
+      return sb.ToString();
+    }
     }
 }

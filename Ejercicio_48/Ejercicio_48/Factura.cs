@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,5 +10,10 @@ namespace Ejercicio_48
     {
         public Factura(int numero):base(numero)
         { }
+
+    public override string Mostrar()
+    {
+      return "\nFactura: " +base.Mostrar() +"\n";
     }
+  }
 }
