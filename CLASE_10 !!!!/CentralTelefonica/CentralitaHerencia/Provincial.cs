@@ -61,7 +61,10 @@ namespace CentralitaHerencia
     public override string Mostrar()
     {
       StringBuilder sb = new StringBuilder();
-      sb.AppendLine(base.Mostrar());
+      //sb.AppendLine("****LLAMADA PROVINCIAL****");
+      sb.AppendFormat("\nDuracion: {0}", this.Duracion);
+      sb.AppendFormat("\nNumero Destino: {0}", this.NroDestino);
+      sb.AppendFormat("\nNumero Origen: {0}", this.NroOrigen);
       sb.AppendFormat("\nFranja Horaria: {0}", this.franjaHoraria);
       sb.AppendFormat("\nCosto: {0}", this.CostoLlamada);
 

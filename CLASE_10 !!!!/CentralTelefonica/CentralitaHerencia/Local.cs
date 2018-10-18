@@ -51,8 +51,10 @@ namespace CentralitaHerencia
     public override string Mostrar()
     {
       StringBuilder sb = new StringBuilder();
-      sb.AppendLine("****LLAMADA LOCAL****");
-      sb.AppendLine(base.Mostrar());
+      //sb.AppendLine("****LLAMADA LOCAL****");
+      sb.AppendFormat("\nDuracion: {0}", this.Duracion);
+      sb.AppendFormat("\nNumero Destino: {0}", this.NroDestino);
+      sb.AppendFormat("\nNumero Origen: {0}", this.NroOrigen);
       sb.AppendFormat("\nCosto: {0}", this.CostoLlamada);
 
       return sb.ToString();

@@ -102,10 +102,11 @@ namespace CentralitaHerencia
       sb.AppendFormat("\nGanancia total: {0}", this.GananciasPorTotal);
       sb.AppendFormat("\nGanancia por provincial: {0}", this.GananciasPorProvincial);
       sb.AppendFormat("\nGanancia por local: {0}", this.GananciasPorLocal);
-      sb.AppendLine("LLAMADAS");
+      sb.AppendLine("\n******LLAMADAS******");
       foreach(Llamada llamada in Llamadas)
       {
-        sb.AppendLine(llamada.Mostrar());
+        sb.Append("\n---------------------------------------");
+        sb.Append(llamada.Mostrar());
       }
 
       return sb.ToString();
