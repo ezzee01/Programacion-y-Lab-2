@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27703.2047
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CentralitaHerencia", "CentralitaHerencia\CentralitaHerencia.csproj", "{F308CC45-B560-4ED5-B621-53A7F83416D7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ejercicio_40", "Ejercicio_40\Ejercicio_40.csproj", "{A3ECE86A-6E7F-43E1-A9E0-AD8C9E5272CA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{F308CC45-B560-4ED5-B621-53A7F83416D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F308CC45-B560-4ED5-B621-53A7F83416D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F308CC45-B560-4ED5-B621-53A7F83416D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3ECE86A-6E7F-43E1-A9E0-AD8C9E5272CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3ECE86A-6E7F-43E1-A9E0-AD8C9E5272CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3ECE86A-6E7F-43E1-A9E0-AD8C9E5272CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3ECE86A-6E7F-43E1-A9E0-AD8C9E5272CA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
