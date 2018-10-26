@@ -1,1 +1,22 @@
 https://www.geekfactory.mx/tutoriales/tutoriales-arduino/driver-ch340-para-arduino-chinos-o-genericos/
+
+milista = milista.OrderBy(o=>o.valor).ToList();
+
+ 
+
+Nota: recuerda agregar el using a System.Linq
+
+ 
+
+ademas define propiedades en la clase
+
+public class MiClase
+{
+   public double valor {get, set;};
+   public string nombre {get, set;};
+   public int edad {get, set;};
+}
+
+ 
+
+saludos
