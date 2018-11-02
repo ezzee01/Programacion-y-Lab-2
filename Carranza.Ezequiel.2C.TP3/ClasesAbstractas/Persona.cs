@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,67 +6,84 @@ using System.Threading.Tasks;
 
 namespace ClasesAbstractas
 {
-    public abstract class Persona
+  public abstract class Persona
+  {
+    #region Atributos
+    public enum ENacionalidad
+    { Argentino, Extranjero }
+    private string apellido;
+    private string nombre;
+    private int dni;
+    private ENacionalidad nacionalidad;
+    #endregion
+
+    #region Propiedades
+    public string Apellido
     {
-        #region Atributos
-        public enum ENacionalidad
-        { Argentino, Extranjero}
-        private string apellido;
-        private string nombre;
-        private int dni;
-        private ENacionalidad nacionalidad;
-        #endregion
-
-        #region Propiedades
-        public string Apellido
-        {
-            get { return this.apellido; }
-            set { this.apellido = value; }
-        }
-
-        public string Nombre
-        {
-            get { return this.nombre; }
-            set { this.nombre = value; }
-        }
-
-        public int DNI
-        {
-            get { return this.dni; }
-            set { this.dni = value; }
-        }
-
-        public ENacionalidad Nacionalidad
-        {
-            get { return this.nacionalidad; }
-            set { this.nacionalidad = value; }
-        }
-
-        public string StringToDNI
-        {
-            set { this.dni = Convert.ToInt32(value); }
-        }
-        #endregion
-
-        #region Constructores
-        public Persona()
-        { }
-
-        public Persona(string nombre, string apellido, ENacionalidad nacionalidad)
-        {
-            this.nacionalidad = nacionalidad;
-            this.nombre = nombre;
-            this.apellido = apellido;
-        }
-
-        public Persona(string nombre, string apellido, int dni, ENacionalidad nacionalidad):this(nombre,apellido,dni.ToString(),nacionalidad)
-        {
-            
-        }
-
-        public Persona(string nombre, string apellido, string dni, ENacionalidad nacionalidad):this(nombre,apellido,nacionalidad)
-        {
-            
-        }
+      get { return this.apellido; }
+      set { this.apellido = value; }
     }
+
+    public string Nombre
+    {
+      get { return this.nombre; }
+      set { this.nombre = value; }
+    }
+
+    public int DNI
+    {
+      get { return this.dni; }
+      set { this.dni = value; }
+    }
+
+    public ENacionalidad Nacionalidad
+    {
+      get { return this.nacionalidad; }
+      set { this.nacionalidad = value; }
+    }
+
+    public string StringToDNI
+    {
+      set { this.dni = Convert.ToInt32(value); }
+    }
+    #endregion
+
+    #region Constructores
+    public Persona()
+    { }
+
+    public Persona(string nombre, string apellido, ENacionalidad nacionalidad)
+    {
+      this.nacionalidad = nacionalidad;
+      this.nombre = nombre;
+      this.apellido = apellido;
+    }
+
+    public Persona(string nombre, string apellido, int dni, ENacionalidad nacionalidad) : this(nombre, apellido, dni.ToString(), nacionalidad)
+    { }
+
+    public Persona(string nombre, string apellido, string dni, ENacionalidad nacionalidad) : this(nombre, apellido, nacionalidad)
+    {
+
+    }
+    #endregion
+    #region Metodos
+    public override string ToString()
+    {      
+    }
+
+    private int ValidarDni(ENacionalidad nacionalidad, int dato)
+    {
+      if(dato < 1 || dato >= 99999999)
+      {
+        throw new DniInvalidoExeption("DNI en rango invalido");
+      }
+    }
+
+    private int ValidarDni(ENacionalidad nacionalidad, string dato)
+    { }
+
+    private string ValidarNombreApellido(string dato)
+    { }
+  }
 }
