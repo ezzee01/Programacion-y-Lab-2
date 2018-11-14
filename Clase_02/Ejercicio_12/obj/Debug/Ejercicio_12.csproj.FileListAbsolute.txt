@@ -1,6 +1,0 @@
-C:\Users\Eze\Desktop\Programacion-y-Lab-2\Clase_02\Ejercicio_12\bin\Debug\Ejercicio_12.exe.config
-C:\Users\Eze\Desktop\Programacion-y-Lab-2\Clase_02\Ejercicio_12\bin\Debug\Ejercicio_12.exe
-C:\Users\Eze\Desktop\Programacion-y-Lab-2\Clase_02\Ejercicio_12\bin\Debug\Ejercicio_12.pdb
-C:\Users\Eze\Desktop\Programacion-y-Lab-2\Clase_02\Ejercicio_12\obj\Debug\Ejercicio_12.csproj.CoreCompileInputs.cache
-C:\Users\Eze\Desktop\Programacion-y-Lab-2\Clase_02\Ejercicio_12\obj\Debug\Ejercicio_12.exe
-C:\Users\Eze\Desktop\Programacion-y-Lab-2\Clase_02\Ejercicio_12\obj\Debug\Ejercicio_12.pdb

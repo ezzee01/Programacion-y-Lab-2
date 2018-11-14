@@ -1,7 +1,0 @@
-C:\Users\Eze\Desktop\Programacion-y-Lab-2\Clase_01\Ejercicio_06\bin\Debug\Ejercicio_06.exe.config
-C:\Users\Eze\Desktop\Programacion-y-Lab-2\Clase_01\Ejercicio_06\bin\Debug\Ejercicio_06.exe
-C:\Users\Eze\Desktop\Programacion-y-Lab-2\Clase_01\Ejercicio_06\bin\Debug\Ejercicio_06.pdb
-C:\Users\Eze\Desktop\Programacion-y-Lab-2\Clase_01\Ejercicio_06\obj\Debug\Ejercicio_06.csprojAssemblyReference.cache
-C:\Users\Eze\Desktop\Programacion-y-Lab-2\Clase_01\Ejercicio_06\obj\Debug\Ejercicio_06.csproj.CoreCompileInputs.cache
-C:\Users\Eze\Desktop\Programacion-y-Lab-2\Clase_01\Ejercicio_06\obj\Debug\Ejercicio_06.exe
-C:\Users\Eze\Desktop\Programacion-y-Lab-2\Clase_01\Ejercicio_06\obj\Debug\Ejercicio_06.pdb
